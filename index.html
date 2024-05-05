@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/100b5f8411.js" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
+</head>
+
+<!-- ----------------Front Page---------- -->
+
+<body>
+    <!-- --------Header Design--------- -->
+    <header class="header">
+        <nav class="navbar">
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <!-- ---------Home Section--------------- -->
+    <section class="home" id="home">
+        <div class="header-text">
+            <h3>Hello, It's Me</h3>
+            <h1><span>Tanmay Rajput</span></h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I'm a Frontend Developer based in Pune, India. I enjoy working on every aspect of Web Development from
+                the user interface.</p>
+        </div>
+        <div class="home-img">
+            <!-- <img src="Images/PHOTO3.jpg" alt=""> -->
+            <img src="Images/PHOTO3.2.jpg" alt="">
+        </div>
+    </section>
+
+    <!---------------- About ------------->
+    <section class="about" id="about">
+
+        <div class="about-col-1">
+            <img src="Images/Sidepng.jpeg" alt="">
+        </div>
+
+        <div class="about-col-2">
+
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>Hi there! I'm a front-end developer with a strong foundation in Java programming, driven by an intense
+                interest in Data
+                Structures and Algorithms (DSA).
+                I enjoy using Java to create scalable and efficient solutions while creating engaging and responsive
+                frontend
+                experiences. Possessing both creative and problem-solving skills, I enjoy the challenge of solving
+                intricate puzzles and
+                bringing original concepts to reality. Let's collaborate to realize our dreams!</p>
+        
+            <div class="tab-titles">
+                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>Java Developer</span><br>Java Programmer</li>
+                    <li><span>DSA </span><br>DSA Programming Enthusiast</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experince">
+                <ul>
+                    <li><span>2021 - Current</span><br>Web Developer.</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2025</span><br>Graduation From PCCOE Pune.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------Serives----------- -->
+    <section class="services" id="services">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Design is about more than just appearances; it's also about narrative. I'm passionate in producing
+                    aesthetically spectacular designs that tell important stories while also captivating viewers. I aim
+                    for flawlessness in every pixel, whether it be in wireframes or prototypes.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Java Developer</h2>
+                <p>Java isn't just a language; it's my foundation. I love delving into the intricacies of Java
+                    programming, leveraging its power to build scalable and efficient solutions that stand the test of
+                    time.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Web Developer</h2>
+                <p>With a creative mindset and a knack for user-centric design, I specialize in crafting engaging and
+                    responsive frontend experiences. From HTML and CSS to JavaScript frameworks like React and Vue.js, I
+                    thrive on turning ideas into intuitive user interfaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------Portfolio------- -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="sub-title">My <span>Projects</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </section>
+
+    <!-- ----------------------contact---------------------------- -->
+    <section class="contact" id="contact">
+
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact <span>Me!</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+
+            <!-- ---------------Form---------------- -->
+            <div class="contact-right">
+                <form class="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <!-- <p>Copyright @ Hrishi. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p> -->
+            <p>Copyright &copy; 2024 by Tanmay <i class="fa-solid fa-heart"></i>| All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <!-- ----------JavaScript---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const typed = new Typed('.multiple-text', {
+            strings: ['Web Designer', 'Web Developer','Java Programmer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 100,
+            loop: true
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyZl4ddRVGJ5WgP07GjunMm5mcOD-L9s-un5q0y_k_7rQpKT2lLZZYaPkMKyq0Y2WnS/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
